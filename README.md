@@ -26,16 +26,16 @@ For this introductory exploration, a Vanilla RNN was chosen. While more complex 
     - **Validation:** A split-sample approach was used to test the model on unseen data, ensuring the model isn't simply memorizing the training set.
 
 ## 🔍 Key Findings & Analysis
-**The "Lag" Effect**
+### The "Lag" Effect
 In the resulting visualizations, the model shows a high degree of correlation with the actual price. However, a critical observation in this stage of deep learning is the "lag" effect—where the model often predicts the next day's price to be very close to today's price.
-**Performance in Volatility**
+### Performance in Volatility
 The model effectively identifies general trends (Bullish/Bearish) but, like most baseline RNNs, struggles with "Black Swan" events or sudden spikes inherent in the Forex market.
 
 ## 🚀 Future Roadmap (Learning Progression)
 As this represents an "Early Phase" project, the following improvements are planned to increase predictive accuracy:
-1. Transition to LSTM/GRU: Implementing gated units to solve the vanishing gradient problem.
-2. Multivariate Analysis: Incorporating external features like Interest Rates or Oil Prices to provide more context to the model.
-3. Hyperparameter Optimization: Using Keras Tuner to find the optimal look-back window and neuron density.
+1. **Transition to LSTM/GRU:** Implementing gated units to solve the vanishing gradient problem.
+2. **Multivariate Analysis:** Incorporating external features like Interest Rates or Oil Prices to provide more context to the model.
+3. **Hyperparameter Optimization:** Using Keras Tuner to find the optimal look-back window and neuron density.
 
 ## 📂 Project Structure
 * `Foreign_Exchange_Temporal_Forecasting.ipynb`: Main development notebook.
